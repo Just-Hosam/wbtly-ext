@@ -1,4 +1,19 @@
 ul {
-	border: 1px solid green;
 	list-style: none;
+	max-height: 400px;
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgba(129, 129, 129, 0.562);
+		border-radius: 100px;
+	}
 }
