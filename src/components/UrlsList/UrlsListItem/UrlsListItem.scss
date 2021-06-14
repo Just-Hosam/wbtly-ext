@@ -1,6 +1,44 @@
 @import '../../../sass/variables';
+@import '../../../sass/animations';
 
 li {
-	color: blue;
-	border-bottom: 1px solid $text-color-icon;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+	animation: fadein 0.3s ease-in-out;
+
+	p {
+		color: var(--text-color);
+		font-size: 1rem;
+		word-wrap: break-word;
+		width: 80%;
+	}
+
+	.urls-cont {
+		display: flex;
+		flex-direction: column;
+		word-wrap: break-word;
+		width: 80%;
+
+		p {
+			margin-bottom: 0.1rem;
+			font-size: 0.85rem;
+		}
+
+		span {
+			font-style: italic;
+			font-size: 0.7rem;
+			color: var(--text-color-alt);
+		}
+	}
+
+	.urls-btns {
+		padding: 0.35rem;
+		color: $text-color-icon;
+	}
 }
