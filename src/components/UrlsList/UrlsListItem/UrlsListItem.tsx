@@ -4,6 +4,7 @@ import './UrlsListItem.css';
 
 import IconButton from '@material-ui/core/IconButton';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
+import Tooltip from '@material-ui/core/Tooltip';
 
 interface Props {
 	data: Url;
@@ -28,9 +29,11 @@ const UrlsListItem = (props: Props) => {
 				</div>
 			)}
 			<CopyToClipboard text={props.data.short_url}>
-				<IconButton aria-label="copy">
-					<FileCopyIcon />
-				</IconButton>
+				<Tooltip title="Copy to Clipboard">
+					<IconButton aria-label="copy">
+						<FileCopyIcon />
+					</IconButton>
+				</Tooltip>
 			</CopyToClipboard>
 		</li>
 	);
