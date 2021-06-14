@@ -1,8 +1,11 @@
 @import '../../sass/variables';
+@import '../../sass/animations';
 
 header {
+	margin-bottom: 0.75rem;
+	animation: fadein 0.3s ease-in-out;
+
 	h1 {
-		border-bottom: 1px solid $text-color-icon;
 		text-align: center;
 		color: $background-color;
 	}
