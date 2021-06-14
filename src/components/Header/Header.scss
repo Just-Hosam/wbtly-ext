@@ -1,0 +1,9 @@
+@import '../../sass/variables';
+
+header {
+	h1 {
+		border-bottom: 1px solid $text-color-icon;
+		text-align: center;
+		color: $background-color;
+	}
+}
